@@ -27,4 +27,4 @@ while True:
         Desc = input("Please enter Description: ")
         amt = int(input("Please enter Amount: "))
 
-        "exepenses[testing india and bhart]"
+        "exepenses[testing india and bhart ye bharat]"
