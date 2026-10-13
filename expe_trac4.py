@@ -15,10 +15,8 @@
 # description
 # amount
 # date
-
-exepenses = [{
-
-}]
+import datetime
+exepenses = []
 
 while True:
     choose = int(input("Please choose an option: "))
@@ -26,6 +24,21 @@ while True:
         Category = input("Please enter Category: ")
         Desc = input("Please enter Description: ")
         amt = int(input("Please enter Amount: "))
+        tim = datetime.datetime.now().date()
+       
 
-        exepenses=["Bottle","Pani"
-        ]
+        expense_item = {
+        "category": Category,
+        "description": Desc,
+        "amount": amt,
+        "date": tim,
+        
+
+    }
+        exepenses.append(expense_item)
+    if choose == 2:
+        if not exepenses:
+            print("No any expenses")
+        else:
+            for i, no in enumerate(exepenses, start=1):
+                print(f"Item {i}:  Category {no['category']} Des {no['description']} Amount {no['amount']} Date {no['date']}")
