@@ -27,5 +27,5 @@ while True:
         Desc = input("Please enter Description: ")
         amt = int(input("Please enter Amount: "))
 
-        exepenses=["Chai","Pani"
+        exepenses=["Bottle","Pani"
         ]
